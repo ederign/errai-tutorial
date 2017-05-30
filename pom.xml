@@ -175,7 +175,7 @@
             to avoid class loading problems for classes that are not needed on the server. 
             To configure an alternative package filter for client-only classes, specify: 
             -Derrai.client.local.class.pattern=.*/myproject/client/.* -->
-          <extraJvmArgs>-Derrai.jboss.home=${errai.jboss.home} -Derrai.dev.context=${errai.dev.context} -Dgwt-plugin.localWorkers="1" -Dgwt-plugin.extraJvmArgs="-Xmx128m -Xms16m"  -Dgwt.jjs.permutationWorkerFactory=com.google.gwt.dev.ThreadedPermutationWorkerFactory</extraJvmArgs>
+          <extraJvmArgs>-Derrai.jboss.home=${errai.jboss.home} -Derrai.dev.context=${errai.dev.context} -Dgwt-plugin.localWorkers="1" -Dgwt.jjs.permutationWorkerFactory=com.google.gwt.dev.ThreadedPermutationWorkerFactory</extraJvmArgs>
           <server>org.jboss.errai.cdi.server.gwt.EmbeddedWildFlyLauncher</server>
           <disableCastChecking>true</disableCastChecking>
           <localWorkers>1</localWorkers>
